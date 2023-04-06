@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		3604475A29DF03F50057962E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3604475929DF03F50057962E /* AppDelegate.swift */; };
 		3604475C29DF03F50057962E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3604475B29DF03F50057962E /* SceneDelegate.swift */; };
-		3604475E29DF03F50057962E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3604475D29DF03F50057962E /* ViewController.swift */; };
-		3604476129DF03F50057962E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3604475F29DF03F50057962E /* Main.storyboard */; };
 		3604476329DF03F70057962E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3604476229DF03F70057962E /* Assets.xcassets */; };
 		3604476629DF03F70057962E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3604476429DF03F70057962E /* LaunchScreen.storyboard */; };
+		3604476E29DF048A0057962E /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3604476D29DF048A0057962E /* View.swift */; };
+		3604477029DF04960057962E /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3604476F29DF04960057962E /* Interactor.swift */; };
+		3604477229DF049E0057962E /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3604477129DF049E0057962E /* Presenter.swift */; };
+		3604477429DF04A20057962E /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3604477329DF04A20057962E /* Entity.swift */; };
+		3604477629DF04A80057962E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3604477529DF04A80057962E /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3604475629DF03F50057962E /* CryptoViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3604475929DF03F50057962E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3604475B29DF03F50057962E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3604475D29DF03F50057962E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3604476029DF03F50057962E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3604476229DF03F70057962E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3604476529DF03F70057962E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3604476729DF03F70057962E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3604476D29DF048A0057962E /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		3604476F29DF04960057962E /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		3604477129DF049E0057962E /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		3604477329DF04A20057962E /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		3604477529DF04A80057962E /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				3604475929DF03F50057962E /* AppDelegate.swift */,
 				3604475B29DF03F50057962E /* SceneDelegate.swift */,
-				3604475D29DF03F50057962E /* ViewController.swift */,
-				3604475F29DF03F50057962E /* Main.storyboard */,
 				3604476229DF03F70057962E /* Assets.xcassets */,
 				3604476429DF03F70057962E /* LaunchScreen.storyboard */,
 				3604476729DF03F70057962E /* Info.plist */,
+				3604476D29DF048A0057962E /* View.swift */,
+				3604476F29DF04960057962E /* Interactor.swift */,
+				3604477129DF049E0057962E /* Presenter.swift */,
+				3604477329DF04A20057962E /* Entity.swift */,
+				3604477529DF04A80057962E /* Router.swift */,
 			);
 			path = CryptoViper;
 			sourceTree = "<group>";
@@ -127,7 +136,6 @@
 			files = (
 				3604476629DF03F70057962E /* LaunchScreen.storyboard in Resources */,
 				3604476329DF03F70057962E /* Assets.xcassets in Resources */,
-				3604476129DF03F50057962E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3604475E29DF03F50057962E /* ViewController.swift in Sources */,
+				3604477629DF04A80057962E /* Router.swift in Sources */,
+				3604477229DF049E0057962E /* Presenter.swift in Sources */,
+				3604476E29DF048A0057962E /* View.swift in Sources */,
+				3604477429DF04A20057962E /* Entity.swift in Sources */,
+				3604477029DF04960057962E /* Interactor.swift in Sources */,
 				3604475A29DF03F50057962E /* AppDelegate.swift in Sources */,
 				3604475C29DF03F50057962E /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +159,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3604475F29DF03F50057962E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3604476029DF03F50057962E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3604476429DF03F70057962E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,6 +297,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,9 +307,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CanKanbur.CryptoViper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +329,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,9 +339,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CanKanbur.CryptoViper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
